@@ -26,14 +26,15 @@
 	<aside class="left-sidebar">
 		<div class="logo">
 			<a href="#welcome">
-				<img src="img/logo.png" alt="">
+				
 			</a>
 		</div>
 		<nav class="left-nav">
-			<ul id="nav">
-				<li class="current"><a href="#welcome">Créer un evenement</a></li>
-                <li><a href="#installation">Mes evenements</a></li>
+			<ul>
+				<li><a href="profile.php" class="active">Créer un evenement</a></li>
+                <li><a href="eventprofile.php">Mes evenements</a></li>
 			</ul>
+
 			<ul>
 				<hr>
 			<li><a href="logout.php">Deconnexion</a></li>

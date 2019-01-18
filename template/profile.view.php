@@ -9,17 +9,17 @@
 			<section id="tmpl-structure" style="margin-bottom : 100px;">
                 <h2 class="title">Les informations de votre evenement</h2>
                 <?php if(isset($errors) && !empty($errors)): ?>
-                            <div class="alert alert-danger" role="alert">
-                                <?php foreach($errors as $error): ?>
-                                    <?= $error ?> <br>
-                                <?php endforeach; ?>
-                            </div>
-                        <?php endif; ?>
-                        <?php if(isset($success)): ?>
-                            <div class="alert alert-success" role="alert">
-                                <?= $success ?> <br>
-                            </div>
-                    <?php endif; ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php foreach($errors as $error): ?>
+                            <?= $error ?> <br>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(isset($success)): ?>
+                    <div class="alert alert-success" role="alert">
+                        <?= $success ?> <br>
+                    </div>
+                <?php endif; ?>
 				<div class="row">
                     <div class="col-md-6">
                     <form method="POST">

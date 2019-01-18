@@ -11,39 +11,24 @@
 							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="banner_content text-center">
-									<div class="date">
-										<a class="gad_btn" href="#">Gadgets</a>
-										<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-										<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-									</div>
-									<h3>Nest Protect: 2nd Gen Smoke + CO Alarm</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="banner_content text-center">
-									<div class="date">
-										<a class="gad_btn" href="#">Gadgets</a>
-										<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-										<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-									</div>
-									<h3>Nest Protect: 2nd Gen Smoke + CO Alarm</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="banner_content text-center">
-									<div class="date">
-										<a class="gad_btn" href="#">Gadgets</a>
-										<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-										<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-									</div>
-									<h3>Nest Protect: 2nd Gen Smoke + CO Alarm</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								</div>
-							</div>
+                            <?php foreach($data_c as $key =>$dt_c): ?>
+                                <div class="carousel-item 
+                                    <?php if($key == 0): ?>active<?php endif; ?>">
+                                    <div class="banner_content text-center">
+                                        <div class="date">
+                                            <a class="gad_btn"
+                                               href="event.php?id=<?= $dt_c['id'] ?>/detail">Details</a>
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                               <?= $dt_c['date_event'] ?>
+                                            </a>
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
+                                        </div>
+                                        <h3><?= $dt_c['title'] ?></h3>
+                                        <p><?= $dt_c['contenu'] ?></p>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+							
 						</div>
 					</div>
 				</div>
@@ -58,62 +43,24 @@
         			<h2>Nos evenements</h2>
         		</div>
         		<div class="row choice_inner">
-        			<div class="col-lg-3 col-md-6">
-        				<div class="choice_item">
-        					<img class="img-fluid" src="img/blog/choice/choice-1.jpg" alt="">
-        					<div class="choice_text">
-        						<div class="date">
-        							<a class="gad_btn" href="#">Gadgets</a>
-									<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-									<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-        						</div>
-        						<a href="news-details.html"><h4>Myspace Layouts The Missing Element already</h4></a>
-        						<p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="choice_item">
-        					<img class="img-fluid" src="img/blog/choice/choice-2.jpg" alt="">
-        					<div class="choice_text">
-        						<div class="date">
-        							<a class="gad_btn" href="#">Gadgets</a>
-									<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-									<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-        						</div>
-        						<a href="news-details.html"><h4>Myspace Layouts The Missing Element already</h4></a>
-        						<p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="choice_item">
-        					<img class="img-fluid" src="img/blog/choice/choice-3.jpg" alt="">
-        					<div class="choice_text">
-        						<div class="date">
-        							<a class="gad_btn" href="#">Gadgets</a>
-									<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-									<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-        						</div>
-        						<a href="news-details.html"><h4>Myspace Layouts The Missing Element already</h4></a>
-        						<p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="choice_item">
-        					<img class="img-fluid" src="img/blog/choice/choice-4.jpg" alt="">
-        					<div class="choice_text">
-        						<div class="date">
-        							<a class="gad_btn" href="#">Gadgets</a>
-									<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>March 14, 2018</a>
-									<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
-        						</div>
-        						<a href="news-details.html"><h4>Myspace Layouts The Missing Element already</h4></a>
-        						<p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
-        					</div>
-        				</div>
-        			</div>
+                    <?php foreach($data as $dt): ?>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="choice_item">
+                                <img class="img-fluid" src="img/blog/choice/choice-1.jpg" alt="">
+                                <div class="choice_text">
+                                    <div class="date">
+                                        <a class="gad_btn" href="event.php?id=<?= $dt->id ?>/detail">Details</a>
+                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <?= $dt->date_event ?>
+                                        </a>
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
+                                    </div>
+                                    <a href="event.php?id=<?= $dt->id ?>/detail"><h4> <?= $dt->title ?></h4></a>
+                                    <p><?= $dt->contenu ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
         		</div>
         	</div>
         </section>
