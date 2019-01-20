@@ -4,7 +4,7 @@ include_once('config/database.php'); //connexion à la base de donnée
 
 
 $query = $db->query("CREATE TABLE event(
-id int primary key default nextval ('event_seq'),
+id int primary key auto_increment,
 title varchar(255),
 content text,
 id_user int
