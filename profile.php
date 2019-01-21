@@ -16,7 +16,7 @@ if(isset($_POST['register']))
     {
         extract($_POST);
         // validation des champs
-        if(mb_strlen($title) < 3)
+        if(strlen($title) < 3)
         {
             $errors[] = "Titre de l'evenement trop court";
         }
