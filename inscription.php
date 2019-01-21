@@ -62,7 +62,7 @@ if(isset($_POST['register']))
                 'password' => sha1($password)
             ]);
             $_SESSION['registration'] = "Votre compte a été crée avec succès, veuillez vous inscrire";
-            header('Location:login.php');
+            header('Location:Connexion.php');
             exit();
         }
 
