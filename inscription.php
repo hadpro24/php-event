@@ -16,7 +16,7 @@ if(isset($_POST['register']))
     {
         extract($_POST);
         // validation des champs
-        if(mb_strlen($nom) < 6)
+        if(strlen($nom) < 6)
         {
             $errors[] = "Nom d'utilisateur trop court";
         }
@@ -24,7 +24,7 @@ if(isset($_POST['register']))
         {
             $errors[] = "Adresse eamil incorrect";
         }
-        if(mb_strlen($password) < 8)
+        if(strlen($password) < 8)
         {
             $errors[] = "Mot de passe trop court, minimum 8 caractères";
         }else{

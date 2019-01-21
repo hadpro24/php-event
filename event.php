@@ -22,7 +22,7 @@ if(isset($_POST['reserver']))
     $errors = [];
     if(!empty($name) && !empty($email))
     {
-        if(mb_strlen($name) < 3)
+        if(strlen($name) < 3)
         {
             $errors[] = "Nom complet trop court";
         }
