@@ -49,13 +49,13 @@
                                 <img class="img-fluid" src="img/blog/choice/choice-1.jpg" alt="">
                                 <div class="choice_text">
                                     <div class="date">
-                                        <a class="gad_btn" href="event.php?id=<?= $dt->id ?>/detail">Details</a>
+                                        <a class="gad_btn" href="event.php?id=<?= $dt->id ?>">Details</a>
                                         <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>
                                             <?= $dt->date_event ?>
                                         </a>
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
                                     </div>
-                                    <a href="event.php?id=<?= $dt->id ?>/detail"><h4> <?= $dt->title ?></h4></a>
+                                    <a href="event.php?id=<?= $dt->id ?>"><h4> <?= $dt->title ?></h4></a>
                                     <p><?= $dt->contenu ?></p>
                                 </div>
                             </div>

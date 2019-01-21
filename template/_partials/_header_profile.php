@@ -37,6 +37,7 @@
 
 			<ul>
 				<hr>
+			<li><a href="index.php">Revenir au site</a></li>
 			<li><a href="logout.php">Deconnexion</a></li>
 			</ul>
 		</nav>
