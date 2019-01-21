@@ -15,7 +15,7 @@
                                             <img class="img-fluid" src="img/blog/choice/choice-1.jpg" alt="">
                                             <div class="choice_text">
                                                 <div class="date">
-                                                    <a class="gad_btn" href="event.php?id=<?= $dt->id ?>/detail">Details</a>
+                                                    <a class="gad_btn" href="event.php?id=<?= $dt->id ?>">Details</a>
                                                     <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>
                                                         <?= $dt->date_event ?>
                                                     </a>
