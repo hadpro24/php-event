@@ -17,7 +17,7 @@
                                     <div class="banner_content text-center">
                                         <div class="date">
                                             <a class="gad_btn"
-                                               href="event.php?id=<?= $dt_c['id'] ?>/detail">Details</a>
+                                               href="event.php?id=<?= $dt_c['id'] ?>">Details</a>
                                             <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>
                                                <?= $dt_c['date_event'] ?>
                                             </a>
