@@ -51,7 +51,6 @@
         <script src="static/vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="static/vendors/jquery-ui/jquery-ui.js"></script>
         <script src="static/js/jquery.ajaxchimp.min.js"></script>
-        <script src="stati/js/mail-script.js"></script>
         <script src="static/js/theme.js"></script>
     </body>
 </html>

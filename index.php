@@ -2,6 +2,7 @@
 
 include_once('config/database.php'); //connexion à la base de donnée
 
+
 $query = $db->query("SELECT * FROM event");
 $data = $query->fetchAll(PDO::FETCH_OBJ);
 
